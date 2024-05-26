@@ -2,7 +2,7 @@
 bbht= new Audio('music/bht.mp3');
 refresh=new Audio('music/gyab.wav');
 over=new Audio('music/khatam.wav');
-var timer=6;
+var timer=60;
 var score=0;
 var hitrn=0;
 function makebubble(){// bubbles create krne ke liye we use a loop
