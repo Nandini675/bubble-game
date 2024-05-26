@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:"Georgia";
+    box-sizing: border-box;
+/* background-color: aquamarine; */
+}
+html,body {
+    width:100%;
+    height:100%;
+
+}
+#main { 
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height: 100%;
+     background-color: rgb(68, 70, 68); 
+   
+}
+#panel {
+    overflow:hidden;
+width:80% ;
+height:80%;
+ /* background-color:rgb(10, 9, 9) ;  */
+ background-color:rgb(78, 15, 194); 
+border-radius: 10px;
+}
+#ptop {
+    padding: 0px 20%;
+    justify-content: space-between;
+    display:flex ;
+    align-items:center;
+    color:white;
+    height:100px;
+    width:100%;
+background-color: rgb(83, 78, 81);
+}
+.elem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.box{
+    color: blueviolet;
+    font-weight: 600;
+    font-size: 22px;
+    padding:10px 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+#pbtm  {
+    display:flex;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    flex-wrap: wrap;   
+      /* matlb elememnts ko next line mai la skte ho */
+    padding: 20px;
+    width:100%;
+    height:calc(100% - 100px); 
+     /* cal function ka use kiya hai % se px ko subtract krne ke liye */
+    /* background-color:rgb(233, 218, 218) ; */
+  
+}
+#pbtm h1{ 
+    
+    color:#333;
+ } 
+#pbtm span{
+    position: absolute;
+    bottom: -50px;
+    height: 50%;
+    width: 50px;
+    background: transparent;
+
+    pointer-events: none;
+       /* box-shadow:0 0 10px rgba(255,255,255,0.5) ;    */
+    animation:animate 4s linear infinite;
+}
+#pbtm span:before{
+   content:"";
+   position: absolute ;
+   width: 100%; 
+   height:100%;
+   transform: scale(0.25) translate(-70%,-70%); 
+   background: radial-gradient(#fff,transparent);
+   border-radius:50%;
+
+}
+@keyframes animate {
+    0%{
+        tranform:transitive(0%); 
+        /* transform: translate(0) scale(1); */
+        opacity: 1;
+    }
+    99%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-1200%);
+        opacity:0;
+    }
+}
+.bubble{
+    display:flex;
+    align-items: center;
+   justify-content: center;
+   width :60px;
+   height:60px;
+   /* background-color:rgb(173, 141, 141) ; */
+   background-color:rgb(98, 122, 245);
+   color:white;
+   border-radius: 50%;
+   font-weight: 500;
+}
+.bubble:hover{
+    cursor:pointer;
+    background-color: rgb(224, 226, 90);
+}
